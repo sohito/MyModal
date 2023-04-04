@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+    font-size: 20px;
+}
+
+#open, #close {
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#mask {
+    background: rgb(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#modal {
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+#modal p {
+    margin: 0 0 20px;
+}
+
+#mask.hidden {
+    display: none;
+}
+
+#modal.hidden {
+    transform: translate(0, -500px);
+}
